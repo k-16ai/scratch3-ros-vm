@@ -133,7 +133,9 @@ class Scratch3RosBase {
 
     // Peripheral connection functions
     scan () {
-        this.masterURI = prompt('Master URI:')
+        // this.masterURI = prompt('Master URI:')
+        // Always running localy on fetch extension
+        this.masterURI = 'localhost';
         this.connect('ws://' + this.masterURI + ':9090');
     }
 
