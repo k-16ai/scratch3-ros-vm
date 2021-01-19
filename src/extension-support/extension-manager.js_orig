@@ -60,8 +60,6 @@ const builtinExtensions = {
  * @property {Function} reject - function to call on failed worker startup
  */
 
-builtinExtensions['speech2scratch'] = () => require('../extensions/scratch3_speech2scratch');
-
 class ExtensionManager {
     constructor (runtime) {
         /**
